@@ -7,7 +7,6 @@ Este projeto consiste em uma aplicação de calculadora funcional desenvolvida t
 - [Explicação do Código Shell Script](#-explicação-do-código-shell-script)
 - [Explicação do Código Python](#-explicação-do-código-python)
 - [Uso do Executável](#-uso-do-executável)
-
 ---
 
 ## 🐚 Como Executar o Arquivo .sh
