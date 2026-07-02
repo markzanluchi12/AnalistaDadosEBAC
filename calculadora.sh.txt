@@ -1,0 +1,39 @@
+#!/bin/bash
+
+echo "=== CALCULADORA==="
+echo "Digite o primeiro número:"
+read num1
+
+echo "Digite o segundo número:"
+read num2
+
+echo "Escolha a operação (+, -, *, /):"
+read operacao
+
+case $operacao in
+    +) resultado=$((num1 + num2)) ;;
+    -) resultado=$((num1 - num2)) ;;
+    \*) resultado=$((num1 * num2)) ;;
+    /) 
+        if [ $num2 -eq 0 ]; then
+            resultado="Erro: Divisão por zero!"
+        else
+            resultado=$((num1 / num2))
+        fi
+        ;;
+    *) resultado="Operação inválida!" ;;
+esac
+
+echo "-------------------------"
+echo "Resultado: $resultado"
+echo "========================="
+
+
+Bash
+chmod 744 calculadora.sh
+
+Bash
+ls -l calculadora.sh
+
+Bash
+./calculadora.sh
